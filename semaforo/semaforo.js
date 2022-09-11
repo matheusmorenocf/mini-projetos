@@ -6,18 +6,27 @@ const semaforoLigado = ( event ) => {
   
 }
 
+const nextIndex = () => {
+  if (colorIndex < 2){
+    colorIndex++
+  } else{
+    colorIndex = 0;
+  }
+  
+}
+
 const changeColor = () => {
   const colors = ['red', 'yellow', 'green']
   const color = colors[colorIndex];
   ligado[color]();
-  colorIndex++;
+  nextIndex();
 }
 
 const ligado = {
   'red': () => image.src = 'imagens/vermelho.png',
   'yellow': () => image.src = 'imagens/amarelo.png',
   'green': () => image.src = 'imagens/verde.png',
-  'aut': () => setInterval(changeColor, 1000);
+  'aut': () => setInterval(changeColor, 1000)
 }
 
 buttons.addEventListener('click', semaforoLigado)
