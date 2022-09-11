@@ -1,35 +1,42 @@
 const image = document.getElementById('imgSem');
 const buttons = document.getElementById('buttons');
 let colorIndex = 0;
-const semaforoLigado = ( event ) => {
-  ligado[event.target.id]();
-  
+let intervalId = null
+
+const trafficLight = ( event ) => {
+  stopAutomatic();
+  turnOn[event.target.id](); 
 }
 
-const nextIndex = () => {
+const nextIndex = () => colorIndex = colorIndex < 2 ? ++colorIndex : 0; // ternario
+  
+  /*
   if (colorIndex < 2){
     colorIndex++
   } else{
     colorIndex = 0;
   }
-  
-}
+  */
 
 const changeColor = () => {
   const colors = ['red', 'yellow', 'green']
   const color = colors[colorIndex];
-  ligado[color]();
+  turnOn[color]();
   nextIndex();
 }
 
-const ligado = {
+const stopAutomatic = () =>{
+  clearInterval( intervalId )
+}
+
+const turnOn = { //funçao dentro de objeto
   'red': () => image.src = 'imagens/vermelho.png',
   'yellow': () => image.src = 'imagens/amarelo.png',
   'green': () => image.src = 'imagens/verde.png',
-  'aut': () => setInterval(changeColor, 1000)
+  'aut': () => intervalId = setInterval(changeColor, 1000)
 }
 
-buttons.addEventListener('click', semaforoLigado)
+buttons.addEventListener('click', trafficLight)
 
 /*const redButton = document.getElementById('red')
 const yellowButton = document.getElementById('yellow')
