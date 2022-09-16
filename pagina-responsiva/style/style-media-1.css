@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media (max-width: 630px){
+  header, footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+  }
+  .logo{
+    width: 150px;
+  }
+  main{
+    grid-template-columns: 1fr;
+  }
+  .content{
+    justify-content: center;
+  }
+  .title{
+    grid-column: 1/2;
+  }
+  .card{
+    width: 80%;
+  }
+}
+@media (max-width: 850px) and (min-width: 631px){
+  header, footer{
+    padding: 0px 20px;
+  }
+  .card{
+    width: 45%;
+  }
+
+}
