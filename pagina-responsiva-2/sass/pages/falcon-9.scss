@@ -1,0 +1,126 @@
+.background-1-pg-2{
+  background: url('../images/falcon9/01.jpg') center;
+  background-size: cover;
+}
+.background-2-pg-2{
+  background: url('../images/falcon9/02.jpg') center;
+  background-size: cover;
+}
+.background-4-pg-2{
+  background: url('../images/falcon9/08.jpg') center;
+  background-size: cover;
+}
+
+
+.container-text-pg-2{
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+  h1{
+    font-family: 'D-Din-b', sans-serif;
+    font-size: 6rem;
+  }
+  p{
+    font-size: 1.5rem;
+    font-family: 'D-Din-b', sans-serif;
+  }
+}
+.container-text-pg-2-sub{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 600px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+  p{
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}
+.container-text-sub-4{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 600px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+  p{
+    text-align: justify;
+  }
+  h3{
+    font-family: 'D-Din-b', sans-serif;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    tr{
+      border-bottom: 1px solid white;
+      
+      th{
+        padding-bottom: 10px;
+      }
+      td{
+        text-align: right;
+      }
+    }
+  }
+}
+.carousel-1{
+  margin: auto 0;
+}
+.text-carousel{
+  margin-left: 10%;
+  table{
+    padding: 10px;
+    border-collapse: collapse;
+    
+    tr{
+      margin-bottom: 1px solid white;
+      td{
+        text-align: right;
+      }
+    }
+  }
+}
+.paragraph-carousel{
+  background-color: black;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.container-text-pg-2-sub6{
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    &:hover{
+      color: rgb(131, 131, 131);
+    }
+  }
+  button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 280px;
+  }
+}
+@media (max-width: 425px){
+  .container-text-pg-2{
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+  }
+  .container-text{
+    p{
+      font-size: 1.5rem;
+    }
+  }
+  .banner{
+    .bTitle{
+      font-size: 4rem;
+    }
+    .bText{
+      font-size: 1rem;
+    }
+  }
+}
