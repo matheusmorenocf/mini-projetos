@@ -28,7 +28,7 @@
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 10%;
-  max-width: 600px;
+  max-width: 37.5rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
   p{
     font-size: 1.8rem;
@@ -64,6 +64,9 @@
 }
 .carousel-1{
   margin: auto 0;
+  img{
+    height: 100vh;
+  }
 }
 .text-carousel{
   margin-left: 10%;
@@ -79,6 +82,7 @@
     }
   }
 }
+
 .paragraph-carousel{
   background-color: black;
   display: inline-block;
