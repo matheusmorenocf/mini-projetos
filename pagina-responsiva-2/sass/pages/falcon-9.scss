@@ -64,9 +64,30 @@
 }
 .carousel-1{
   margin: auto 0;
+  height: 100vh;
   img{
     height: 100vh;
   }
+}
+.bg-carousel-1{
+  background: url('../images/falcon9/03.jpg') center;
+  background-size: cover;
+}
+.bg-carousel-2{
+  background: url('../images/falcon9/04.jpg') center;
+  background-size: cover;
+}
+.bg-carousel-3{
+  background: url('../images/falcon9/05.jpg') center;
+  background-size: cover;
+}
+.bg-carousel-4{
+  background: url('../images/falcon9/06.jpg') center;
+  background-size: cover;
+}
+.bg-carousel-5{
+  background: url('../images/falcon9/07.jpg') center;
+  background-size: cover;
 }
 .text-carousel{
   margin-left: 10%;
