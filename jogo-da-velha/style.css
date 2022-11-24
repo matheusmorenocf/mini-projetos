@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 100%;
+	vertical-align: bottom;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main{
+  max-width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+header{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.headerPlayer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.label{
+  width: 3em;
+  height: 3em;
+  background: #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.boxPlayer{
+  display: flex;
+  height: 3.4em;
+  border: solid #E5E5E5;
+}
+.boxPlayer > input{
+  width: 14em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: .5em;
+}
+#start{
+  height: 3em;
+  cursor: pointer;
+}
+#game{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+.btn{
+  width: 10rem;
+  height: 10rem;
+  font-size: 5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#output{
+  width: 100%;
+  font-size: 1.5em;
+  padding: .5em;
+}
+
+.turn{
+  border: solid rgb(0, 255, 0);
+}
+.win{
+  background-color: #00ff0071;
+  color: black;
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da Velha</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>
+        Jogo da Velha
+      </h1>
+    </header>
+    <section class="headerPlayer">
+      <div id="playerOne" class="boxPlayer">
+        <label for="nameP1" class="label">X</label>
+        <input type="text" id="nameP1" placeholder="Digite o nome do jogador 1">
+      </div>
+      <div class="versus">
+        <button id="start">START</button>
+      </div>
+      <div id="playerTwo" class="boxPlayer">
+        <label for="nameP2" class="label">O</label>
+        <input type="text" id="nameP2" placeholder="Digite o nome do jogador 2">
+      </div>
+    </section>
+    <section id="game">
+      <button class="btn" data-region="0.0"></button>
+      <button class="btn" data-region="0.1"></button>
+      <button class="btn" data-region="0.2"></button>
+      <button class="btn" data-region="1.0"></button>
+      <button class="btn" data-region="1.1"></button>
+      <button class="btn" data-region="1.2"></button>
+      <button class="btn" data-region="2.0"></button>
+      <button class="btn" data-region="2.1"></button>
+      <button class="btn" data-region="2.2"></button>
+    </section>
+    <section>
+      <input type="text" id="output" disabled>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
