@@ -60,9 +60,10 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
 }
 
 
-document.getElementById('passwordLength').addEventListener('click', () =>{
+document.getElementById('passwordLength').addEventListener('change', () =>{
   updateLength()
 })
+
 generatePasswordButton.addEventListener('click', () => {
   generatePassword(getLetterLowerCase, getLetterUpperCase, getNumber, getSymbol)
 })
