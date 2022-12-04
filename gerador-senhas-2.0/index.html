@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de senhas 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Gerador de Senhas</h1>
+      <div>
+        <input type="range" name="passwordLength" id="passwordLength" min="0" max="12" step="1" value="8">
+        <span id="passLength"></span>
+      </div>
+      <div>
+        <label for="letterLower">Letras minusculas</label>
+        <input type="checkbox" name="letterLower" id="letterLower" checked>
+      </div>
+      <div>
+        <label for="letterUpper">Letras maiusculas</label>
+        <input type="checkbox" name="letterUpper" id="letterUpper" checked>
+      </div>
+      <div>
+        <label for="number">Numeros</label>
+        <input type="checkbox" name="number" id="number" checked>
+      </div>
+      <div>
+        <label for="symbols">Caracteres especiais</label>
+        <input type="checkbox" name="symbols" id="symbols">
+      </div>
+      <div>
+        <button id="generatePassword">Gerar</button>
+      </div>
+      <div id="generatedPassword">
+        <h2></h2>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
