@@ -65,12 +65,13 @@ document.getElementById('passwordLength').addEventListener('change', () =>{
 })
 
 generatePasswordButton.addEventListener('click', () => {
+  generatePasswordElement.querySelector('h2').classList.remove('copied')
   generatePassword(getLetterLowerCase, getLetterUpperCase, getNumber, getSymbol)
 })
 
 copyButton.addEventListener('click', () =>{
   navigator.clipboard.writeText(generatePasswordElement.querySelector('h2').innerText)
-  generatePasswordElement.querySelector('h2').innerText
+  generatePasswordElement.querySelector('h2').classList.add('copied')
 })
 
 

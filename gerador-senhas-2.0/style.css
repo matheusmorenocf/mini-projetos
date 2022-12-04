@@ -102,7 +102,10 @@ main section h1{
 .material-symbols-outlined:hover{
   color: #a5ffb290;
 }
-
+.copied{
+  color: #a5ffb290;
+  font-style: italic;
+}
 @media (max-width: 430px){
   main{
     min-width: 22rem;
