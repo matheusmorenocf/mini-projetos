@@ -5,39 +5,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerador de senhas 2.0</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <main>
     <section>
-      <h1>Gerador de Senhas</h1>
-      <div>
-        <input type="range" name="passwordLength" id="passwordLength" min="0" max="12" step="1" value="8">
-        <span id="passLength"></span>
-      </div>
-      <div>
-        <label for="letterLower">Letras minusculas</label>
-        <input type="checkbox" name="letterLower" id="letterLower" checked>
-      </div>
-      <div>
-        <label for="letterUpper">Letras maiusculas</label>
-        <input type="checkbox" name="letterUpper" id="letterUpper" checked>
-      </div>
-      <div>
-        <label for="number">Numeros</label>
-        <input type="checkbox" name="number" id="number" checked>
-      </div>
-      <div>
-        <label for="symbols">Caracteres especiais</label>
-        <input type="checkbox" name="symbols" id="symbols">
-      </div>
-      <div>
-        <button id="generatePassword">Gerar</button>
-      </div>
+      <h1>Password Generator</h1>
       <div id="generatedPassword">
-        <h2></h2>
+        <h2>
+
+        </h2>
+        <span class="material-symbols-outlined">
+          copy_all
+          </span>
       </div>
+      <div id="form">
+        <div id="container-range">
+          <div>
+            <label for="passwordLength">Character Length</label>
+            <span id="passLength"></span>
+          </div>
+          <div>
+            <input type="range" name="passwordLength" id="passwordLength" min="0" max="12" step="1" value="6">
+          </div>
+        </div>
+        <div id="container-checkbox">
+          <div>
+            <input type="checkbox" name="letterLower" id="letterLower" checked>
+            <label for="letterLower">Letras minusculas</label>
+          </div>
+          <div>
+            <input type="checkbox" name="letterUpper" id="letterUpper" checked>
+            <label for="letterUpper">Letras maiusculas</label>
+          </div>
+          <div>
+            <input type="checkbox" name="number" id="number" checked>
+            <label for="number">Numeros</label>
+          </div>
+          <div>
+            <input type="checkbox" name="symbols" id="symbols" checked>
+            <label for="symbols">Caracteres especiais</label>
+          </div>
+        </div>
+        <div>
+          <button id="generatePassword">GENERATE</button>
+        </div>
+      </div>
+
 
     </section>
   </main>

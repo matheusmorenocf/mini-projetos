@@ -4,6 +4,7 @@ const letterLower = document.getElementById('letterLower')
 const letterUpper = document.getElementById('letterUpper')
 const numberChar = document.getElementById('number')
 const specialChar = document.getElementById('symbols')
+const copyButton = document.querySelector('.material-symbols-outlined')
 
 let passwordLength = Number(document.getElementById('passwordLength').value)
 document.getElementById('passLength').innerText = passwordLength
@@ -55,7 +56,6 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
     })
   }
   password = password.slice(0, passwordLength)
-  generatePasswordElement.style.display = 'block'
   generatePasswordElement.querySelector('h2').innerText = password
 }
 
@@ -68,5 +68,9 @@ generatePasswordButton.addEventListener('click', () => {
   generatePassword(getLetterLowerCase, getLetterUpperCase, getNumber, getSymbol)
 })
 
+copyButton.addEventListener('click', () =>{
+  navigator.clipboard.writeText(generatePasswordElement.querySelector('h2').innerText)
+  generatePasswordElement.querySelector('h2').innerText
+})
 
 
