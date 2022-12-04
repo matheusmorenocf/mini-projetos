@@ -28,13 +28,15 @@ main section h1{
   font-size: 1.2rem;
   text-align: center;
 }
-main section div button{
-  margin: 0 auto;
+#generatePassword{
   cursor: pointer;
   background-color: #A5FFB2;
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 1rem;
   font-weight: bold;
+}
+#generatePassword:hover{
+  background-color: #a5ffb2cb;
 }
 #generatedPassword{
   height: 4rem;
