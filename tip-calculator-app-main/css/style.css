@@ -1,0 +1,196 @@
+* {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+#container {
+  min-height: 100vh;
+  background-color: hsl(185deg, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  width: 5rem;
+  overflow-wrap: break-word;
+  color: hsl(183deg, 100%, 15%);
+  font-size: 1.2rem;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 45rem;
+  height: 25rem;
+  border-radius: 1.5rem;
+}
+
+main form {
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#leftSide, #rightSide {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#leftSide label, h2 {
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  color: hsl(184deg, 14%, 56%);
+}
+
+#error {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.hiden {
+  display: none;
+}
+
+#leftSide .input-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+#leftSide {
+  padding-bottom: 1rem;
+}
+
+.outlineOne:hover {
+  outline: 0.2rem solid;
+  outline-color: hsl(172deg, 67%, 45%);
+}
+
+.image-container {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: hsl(180deg, 33%, 97%);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+#leftSide .tip-container input[type=button] {
+  width: 5.6rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+#leftSide .tip-container input[type=button]:hover {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+#leftSide .tip-container #custonButton {
+  background-color: hsl(180deg, 33%, 97%);
+  color: hsl(184deg, 14%, 56%);
+}
+
+input[type=number] {
+  cursor: pointer;
+  background-color: hsl(180deg, 33%, 97%);
+  color: hsl(183deg, 100%, 15%);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  text-align: right;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#rightSide {
+  padding: 3rem 1.8rem 2rem 1.8rem;
+  background-color: hsl(183deg, 100%, 15%);
+}
+
+.tipContainer, .totalContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 0.8rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.small {
+  font-size: 0.6rem;
+  color: hsl(180deg, 33%, 97%);
+  opacity: 50%;
+}
+
+#tipResult, #totalResult {
+  font-size: 2rem;
+  color: hsl(172deg, 67%, 45%);
+}
+
+input[type=reset] {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+input[type=reset]:active {
+  opacity: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */
