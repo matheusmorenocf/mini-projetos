@@ -23,7 +23,7 @@ https://matheusmorenocf.github.io/mini-projetos/password-generator/index.html
 
 Nele você pode inserir novas tarefas, editar tarefas existentes, filtrar tarefas feitas e a fazer e pesquisar alguma tarefa.
 
-![Password Generator](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/todo-list.gif)
+![Todo list](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/todo-list.gif)
 
 https://matheusmorenocf.github.io/mini-projetos/todo-list-2/index.html
 
