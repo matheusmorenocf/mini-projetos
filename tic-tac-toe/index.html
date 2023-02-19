@@ -15,19 +15,42 @@
   <script src="script/script.js" defer></script>
 </head>
 <body>
-  <main>
+  <div id="menu" class="">
+    <div>
+      <span class="material-symbols-outlined pX">
+        cancel
+        </span><span class="material-symbols-outlined pO">
+          lens
+          </span>
+    </div>
+    <div class="optionMenu">
+      <p class="menuTitle">PICK PLAYER I'TS MARK</p>
+      <p>
+        <span class="material-symbols-outlined">cancel
+        </span>
+        <span class="material-symbols-outlined">lens
+        </span>
+        </p>
+      <p class="subTitle">
+        REMEMBER X GOES FIRST
+      </p>
+    </div>
+    <button id="buttonNewCpu" class="backO menuButton">NEW GAME (VS CPU)</button>
+    <button id="buttonNewPlayer" class="backX menuButton">NEW GAME (VS PLAYER)</button>
+    </div>
+  </div>
+  <div id="gameBoard" class="hidden">
     <div id="header">
       <div>
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined pX">
           cancel
-          </span><span class="material-symbols-outlined">
+          </span><span class="material-symbols-outlined pO">
             lens
             </span>
       </div>
       <div>
-        <span id="turn" class="material-symbols-outlined">
-          cancel
-          </span><span>TURN</span>
+        <span id="turn" class="material-symbols-outlined smallTitle">cancel</span>
+        <span>TURN</span>
       </div>
       <div>
         <button id="buttonReset">
@@ -49,9 +72,31 @@
       <button class="buttonGame" data-region="2.2"></button>
     </div>
     <div id="footer">
-        <span class="smallTitle">WINNER</span>
-        <div id="winner"></div>
+      <div class="backX">
+        <p class="smallTitle">
+          X (YOU)
+        </p>
+        <p class="score">
+          0
+        </p>
+      </div>
+      <div class="backT">
+        <p class="smallTitle">
+          TIES
+        </p>
+        <p class="score">
+          0
+        </p>
+      </div>
+      <div class="backO">
+        <p class="smallTitle">
+          X (CPU)
+        </p>
+        <p class="score">
+          0
+        </p>
+      </div>
     </div>
-  </main>
+  </div>
 </body>
 </html>

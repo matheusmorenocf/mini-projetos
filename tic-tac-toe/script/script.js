@@ -1,45 +1,55 @@
 const buttons = document.querySelectorAll(".buttonGame")
 const board = document.getElementById('turn')
 const resetButton = document.getElementById('buttonReset') 
-const winner = document.getElementById('winner')
+const buttonNewGameCpu = document.getElementById('buttonNewCpu')
+const buttonNewGamePlayer = document.getElementById('buttonNewPlayer')
+const menu = document.getElementById('menu')
+const gameBoard = document.getElementById('gameBoard')
 let turn = 'X'
 let vBoard = []
-
 const reset = () => {
   turn = 'X'
+  board.classList.remove('pO')
+  board.classList.remove('pX')
+  board.innerText = 'cancel'
   buttons.forEach(function(element){
     element.classList.remove('win')
     element.classList.remove('turnO')
     element.classList.remove('turnX')
     element.disabled = ''
     element.innerHTML = ``
-    board.classList.remove('turnO')
-    board.classList.remove('turnX')
-    board.innerHTML = `<span class="material-symbols-outlined">
-    cancel
-    </span>`
-    winner.innerHTML = ``
   })
 }
 const changeTurn = () =>{
-  turn == 'X' ? turnX(board):turnO(board)
+  if(turn == 'X'){
+    board.classList.remove('pO')
+    board.classList.add('pX')
+    board.innerText = 'cancel'
+  }else{
+    board.classList.remove('pX')
+    board.classList.add('pO')
+    board.innerText = 'lens'
+  }
+    
 
   turn == 'X' ? turn = 'O':turn = 'X'
 }
+
 const turnX = (element) => {
-  element.classList.remove('turnO')
-  element.classList.add('turnX')
+  element.classList.remove('pO')
+  element.classList.add('pX')
   element.innerHTML = `<span class="material-symbols-outlined">
         cancel
     </span>`
 }
 const turnO = (element) => {
-  element.classList.remove('turnX')
-  element.classList.add('turnO')
+  element.classList.remove('pX')
+  element.classList.add('pO')
   element.innerHTML = `<span class="material-symbols-outlined">
         lens
     </span>`
 }
+
 
 function initializeGame(){
   vBoard = [['', '', ''], ['', '', ''], ['', '', '']]
@@ -50,12 +60,12 @@ function initializeGame(){
       
     })
   }
-
 function handleBoardClick(ev){
   const btn = ev.currentTarget
   const rowColumnPair = btn.dataset.region.split('.')
   const row = rowColumnPair[0]
   const column = rowColumnPair[1]
+  btn.disabled = 'true'
   if(turn === 'X'){
     turnX(btn)
     vBoard[row][column] = 'X'
@@ -75,15 +85,9 @@ function handleBoardClick(ev){
 function handleWin(regions){
   regions.forEach(function(region){
     document.querySelector('[data-region="'+ region +'"]').classList.add('win')
-    winner.innerHTML =  turn == 'X' ? `<span>O vencedor é</span> <span class="material-symbols-outlined turnX">
-    cancel
-    </span>`:`<span>O vencedor é</span> <span class="material-symbols-outlined turnO">
-    lens
-    </span>`
   })
 
 }
-
 function getWinRegions(){
   const winRegions = []
   if(vBoard[0][0] && vBoard[0][0] === vBoard[0][1] && vBoard[0][1] === vBoard [0][2]){
@@ -111,4 +115,17 @@ resetButton.addEventListener('click', function(){
   initializeGame()
 })
 
-initializeGame()
+//initializeGame()
+
+buttonNewGameCpu.addEventListener('click', function(){
+  menu.classList.add('hidden')
+  gameBoard.classList.remove('hidden')
+  initializeGame()
+})
+
+buttonNewGamePlayer.addEventListener('click', function(){
+  menu.classList.add('hidden')
+  gameBoard.classList.remove('hidden')
+  initializeGame()
+})
+

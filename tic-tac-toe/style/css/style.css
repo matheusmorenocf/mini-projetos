@@ -4,17 +4,101 @@
   box-sizing: border-box;
   font: inherit;
   font-family: "Cabin", sans-serif;
+  transition: ease-in-out;
 }
 
 body {
   background: #192A32;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-main {
+.hidden {
+  visibility: hidden;
+}
+
+#menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+#menu button:nth-child(3) {
+  box-shadow: 0px 3px 0px 1px rgba(242, 177, 55, 0.7098039216);
+}
+#menu button:nth-child(4) {
+  box-shadow: 0px 3px 0px 1px rgba(49, 196, 191, 0.6901960784);
+}
+
+.optionMenu {
+  background-color: #1F3540;
+  width: 23em;
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+  gap: 0.5rem;
+  font-weight: bold;
+  border-radius: 0.7em;
+  box-shadow: 0px 4px 0px 1px rgba(0, 0, 0, 0.304);
+}
+.optionMenu p:nth-child(2) {
+  background: #192A32;
+  width: 21em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.7em;
+  padding: 0.5em 0.5em;
+}
+.optionMenu p:nth-child(2) span {
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+  border-radius: 0.2em;
+  font-weight: bolder;
+}
+.optionMenu p:nth-child(2) span:nth-child(1) {
+  color: #A8BEC9;
+}
+.optionMenu p:nth-child(2) span:nth-child(1):hover {
+  background: #A8BEC9;
+  color: #192A32;
+}
+.optionMenu p:nth-child(2) span:nth-child(2) {
+  color: #A8BEC9;
+}
+.optionMenu p:nth-child(2) span:nth-child(2):hover {
+  background: #A8BEC9;
+  color: #192A32;
+}
+
+.menuTitle {
+  color: #A8BEC9;
+  font-size: 0.8em;
+}
+
+.subTitle {
+  color: rgba(168, 190, 201, 0.6117647059);
+  font-size: 0.6em;
+}
+
+.menuButton {
+  width: 23em;
+  height: 3em;
+  border-radius: 0.7em;
+}
+
+#gameBoard {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -23,6 +107,7 @@ main {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 #header {
@@ -44,12 +129,6 @@ button {
   font-size: 1.5em;
   font-weight: bolder;
 }
-#header div:nth-child(1) span:nth-child(1) {
-  color: #31C4BE;
-}
-#header div:nth-child(1) span:nth-child(2) {
-  color: #F2B237;
-}
 #header div:nth-child(2) {
   background-color: #1F3540;
   color: #A8BEC9;
@@ -61,6 +140,30 @@ button {
 }
 #header div:nth-child(3) {
   justify-content: flex-end;
+}
+
+.pX {
+  color: #31C4BE;
+}
+
+.pO {
+  color: #F2B237;
+}
+
+.pX, .pO {
+  font-weight: bolder;
+}
+
+.backX {
+  background: #31C4BE;
+}
+
+.backO {
+  background: #F2B237;
+}
+
+.backT {
+  background: #A8BEC9;
 }
 
 #buttonReset {
@@ -90,33 +193,28 @@ button {
   font-size: 5em;
 }
 
-.turnX {
-  color: #31C4BE;
-}
-
-.turnO {
-  color: #F2B237;
-}
-
 #footer {
-  background: #A8BEC9;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+#footer div {
+  width: 7em;
   height: 4em;
-  padding: 0.5em 0;
+  border-radius: 0.7em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.1em;
-  border-radius: 0.7em;
-  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.304);
+  justify-content: center;
 }
 
 .smallTitle {
   font-size: 0.8em;
 }
 
-#scoreYou, #ties, #scoreCPU {
-  font-weight: bold;
+.score {
   font-size: 1.2em;
+  font-weight: bold;
 }
 
 #turn {
