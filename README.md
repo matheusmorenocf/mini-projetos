@@ -31,20 +31,6 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/p
 - CSS3
 - Javascript
 
-
-## Password Generator
-
-Nele voce define a quantidade de caracteres e os tipos de caracteres que voce deseja, depois é clicar no botão "GENERATE" e copiar a senha.
-
-![Password Generator](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/password-generador.gif)
-
-Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/password-generator/index.html" target="_blank">AQUI!</a>
-
-### Tecnologias Utilizadas
-- HTML5
-- CSS3
-- Javascript
-
 ## Todo-list
 
 Nele você pode inserir novas tarefas, editar tarefas existentes, filtrar tarefas feitas e a fazer e pesquisar alguma tarefa.
