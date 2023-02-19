@@ -8,7 +8,7 @@ Este repositorio foi criado para alocar alguns pequenos projetos que fiz.
 
 ## tic tac toe
 
-![tic tac toe](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/tic-tac-toe.gif)
+<div style="text-align: center;"><img src="https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/tic-tac-toe.gif"></div>
 
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/tic-tac-toe/index.html" target="_blank">AQUI!</a>
 
@@ -22,7 +22,7 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/t
 
 Nele voce define a quantidade de caracteres e os tipos de caracteres que voce deseja, depois é clicar no botão "GENERATE" e copiar a senha.
 
-![Password Generator](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/password-generador.gif)
+<div style="text-align: center;"><img src="https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/password-generador.gif"></div>
 
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/password-generator/index.html" target="_blank">AQUI!</a>
 
@@ -35,7 +35,7 @@ Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/p
 
 Nele você pode inserir novas tarefas, editar tarefas existentes, filtrar tarefas feitas e a fazer e pesquisar alguma tarefa.
 
-![Todo list](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/todo-list.gif)
+<div style="text-align: center;"><img src="https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/todo-list.gif"></div>
 
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/todo-list-2/index.html" target="_blank">AQUI!</a>
 
