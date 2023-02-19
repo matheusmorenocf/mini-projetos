@@ -8,7 +8,7 @@ Este repositorio foi criado para alocar alguns pequenos projetos que fiz.
 
 ## tic tac toe
 
-<div style="text-align: center; width: 30em;"><img src="https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/tic-tac-toe.gif"></div>
+<div style="text-align: center;"><img src="https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/tic-tac-toe.gif"></div>
 
 Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/tic-tac-toe/index.html" target="_blank">AQUI!</a>
 
