@@ -12,7 +12,7 @@ Nele voce define a quantidade de caracteres e os tipos de caracteres que voce de
 
 ![Password Generator](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/password-generador.gif)
 
-https://matheusmorenocf.github.io/mini-projetos/password-generator/index.html
+Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/password-generator/index.html" target="_blank">AQUI!</a>
 
 ### Tecnologias Utilizadas
 - HTML5
@@ -25,7 +25,7 @@ Nele você pode inserir novas tarefas, editar tarefas existentes, filtrar tarefa
 
 ![Todo list](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/todo-list.gif)
 
-https://matheusmorenocf.github.io/mini-projetos/todo-list-2/index.html
+Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/todo-list-2/index.html" target="_blank">AQUI!</a>
 
 ### Tecnologias Utilizadas
 - HTML5
