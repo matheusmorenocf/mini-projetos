@@ -6,6 +6,32 @@
 
 Este repositorio foi criado para alocar alguns pequenos projetos que fiz.
 
+## tic tac toe
+
+![tic tac toe](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/tic-tac-toe.gif)
+
+Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/tic-tac-toe/index.html" target="_blank">AQUI!</a>
+
+### Tecnologias Utilizadas
+- HTML5
+- CSS3
+- Javascript
+- SASS
+
+## Password Generator
+
+Nele voce define a quantidade de caracteres e os tipos de caracteres que voce deseja, depois é clicar no botão "GENERATE" e copiar a senha.
+
+![Password Generator](https://github.com/matheusmorenocf/mini-projetos/blob/main/assets/password-generador.gif)
+
+Veja ao vivo clicando <a href="https://matheusmorenocf.github.io/mini-projetos/password-generator/index.html" target="_blank">AQUI!</a>
+
+### Tecnologias Utilizadas
+- HTML5
+- CSS3
+- Javascript
+
+
 ## Password Generator
 
 Nele voce define a quantidade de caracteres e os tipos de caracteres que voce deseja, depois é clicar no botão "GENERATE" e copiar a senha.
