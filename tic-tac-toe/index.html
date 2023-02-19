@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Jogo da Velha</title>
+  <title>Tic Tac Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style/css/style.css">
+  <script src="script/script.js" defer></script>
 </head>
 <body>
   <main>
-    <header>
-      <h1>
-        Jogo da Velha
-      </h1>
-    </header>
-    <section class="headerPlayer">
-      <div id="playerOne" class="boxPlayer">
-        <label for="nameP1" class="label">X</label>
-        <input type="text" id="nameP1" placeholder="Nome jogador 1">
+    <div id="header">
+      <div>
+        <span class="material-symbols-outlined">
+          cancel
+          </span><span class="material-symbols-outlined">
+            lens
+            </span>
       </div>
-      <div class="versus">
-        <button id="start">START</button>
+      <div>
+        <span id="turn" class="material-symbols-outlined">
+          cancel
+          </span><span>TURN</span>
       </div>
-      <div id="playerTwo" class="boxPlayer">
-        <input type="text" id="nameP2" placeholder="Nome jogador 2">
-        <label for="nameP2" class="label">O</label>
+      <div>
+        <button id="buttonReset">
+          <span class="material-symbols-outlined">
+            restart_alt
+            </span>
+        </button>
       </div>
-    </section>
-    <section id="game">
-      <button class="btn" data-region="0.0"></button>
-      <button class="btn" data-region="0.1"></button>
-      <button class="btn" data-region="0.2"></button>
-      <button class="btn" data-region="1.0"></button>
-      <button class="btn" data-region="1.1"></button>
-      <button class="btn" data-region="1.2"></button>
-      <button class="btn" data-region="2.0"></button>
-      <button class="btn" data-region="2.1"></button>
-      <button class="btn" data-region="2.2"></button>
-    </section>
-    <section>
-      <input type="text" id="output" disabled>
-    </section>
+    </div>
+    <div id="buttonContainer">
+      <button class="buttonGame" data-region="0.0"></button>
+      <button class="buttonGame" data-region="0.1"></button>
+      <button class="buttonGame" data-region="0.2"></button>
+      <button class="buttonGame" data-region="1.0"></button>
+      <button class="buttonGame" data-region="1.1"></button>
+      <button class="buttonGame" data-region="1.2"></button>
+      <button class="buttonGame" data-region="2.0"></button>
+      <button class="buttonGame" data-region="2.1"></button>
+      <button class="buttonGame" data-region="2.2"></button>
+    </div>
+    <div id="footer">
+        <span class="smallTitle">WINNER</span>
+        <div id="winner"></div>
+    </div>
   </main>
-  <script src="app.js"></script>
 </body>
 </html>

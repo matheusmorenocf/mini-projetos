@@ -1,0 +1,128 @@
+$background: #192A32;
+$color-1: #1F3540;
+$color-2: #31C4BE;
+$color-3: #A8BEC9;
+$color-4: #F2B237;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-family: 'Cabin', sans-serif;
+}
+body{
+  background: $background;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 23em;
+}
+button{
+  cursor: pointer;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+  div{
+    width: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    border-radius: .5em;
+  }
+  div:nth-child(1){
+    justify-content: flex-start;
+    span{
+      font-size: 1.5em;
+      font-weight: bolder;
+    }
+    span:nth-child(1){
+      color: $color-2;
+    }
+    span:nth-child(2){
+      color: $color-4;
+    }
+  }
+  div:nth-child(2){
+    background-color: $color-1;
+    color: $color-3;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.303);
+    span:nth-child(1){
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+  div:nth-child(3){
+    justify-content: flex-end;
+  }
+}
+#buttonReset{
+  background: $color-3;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: .5em;
+  border: none;
+  box-shadow: 0px 3px 0px 1px #a8bec99e;
+}
+#buttonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.buttonGame{
+  background: $color-1;
+  width: 7em;
+  height: 7em;
+  border-radius: .7em;
+  border: none;
+  box-shadow: 0px 4px 0px 1px rgba(0, 0, 0, 0.304);
+  span{
+    font-size: 5em;
+  }
+}
+.turnX{
+  color: $color-2;
+}
+.turnO{
+  color: $color-4;
+}
+#footer{
+  background: $color-3;
+  height: 4em;
+  padding: .5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1em;
+  border-radius: .7em;
+  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.304);
+}
+
+.smallTitle{
+  font-size: .8em;
+}
+#scoreYou, #ties, #scoreCPU{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#turn{
+  display: flex;
+}
+#winner{
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  gap: .5em;
+}
+.win{
+  border: 3px solid green;
+}
