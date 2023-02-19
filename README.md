@@ -1,6 +1,6 @@
 # mini-projetos
 
-<div align="center"><img src="https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic"></div>
+<div align="center"><img src="https://img.shields.io/github/license/matheusmorenocf/mini-projetos?style=plastic"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/matheusmorenocf/mini-projetos?style=plastic"></div>
 
 # Sobre o repositorio
 
